@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Evolution of Development | Expo Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="deck-shell">
+    <div class="top-bar">
+      <span class="brand">College Project Expo</span>
+      <span id="slideCounter">1 / 7</span>
+    </div>
+
+    <main id="deck" class="deck">
+      <section class="slide active" data-title="Hero Cover">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">Quiet Luxury • Developer Dark Mode</p>
+            <h1>The Evolution of Development</h1>
+            <p class="subtitle">Architecting the Future with Agentic AI &amp; MCP</p>
+          </div>
+          <div class="knot-wrap" aria-hidden="true">
+            <svg viewBox="0 0 320 320" class="knot">
+              <defs>
+                <linearGradient id="indigoGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#7f6cff"/>
+                  <stop offset="100%" stop-color="#4f46e5"/>
+                </linearGradient>
+              </defs>
+              <path d="M70,160 C70,100 120,70 160,70 C225,70 252,122 252,160 C252,220 202,252 160,252 C96,252 70,198 70,160 Z" />
+              <path d="M110,90 C172,92 226,145 222,205" />
+              <path d="M210,110 C147,104 97,160 103,230" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-title="The Bottleneck">
+        <h2>The Bottleneck: Why Copilots Plateau</h2>
+        <div class="split">
+          <article class="panel passive">
+            <h3>Copilot (Passive)</h3>
+            <div class="chat-prison">Prompt → Suggestion → Prompt</div>
+            <ul class="stagger">
+              <li>Bound to chat context only</li>
+              <li>No durable memory across tools</li>
+              <li>Low autonomy, high supervision</li>
+            </ul>
+          </article>
+          <article class="panel active-panel">
+            <h3>Agent (Active)</h3>
+            <div class="agent-breakout">Issue → Plan → Edit → Test → PR</div>
+            <ul class="stagger">
+              <li>Breaks out to filesystem and APIs</li>
+              <li>Orchestrates editor, terminal, and SCM</li>
+              <li>Closed-loop reasoning with verifiable actions</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" data-title="From Prompts to Protocols">
+        <h2>From Prompts to Protocols</h2>
+        <p class="lead">Agentic systems need predictable interfaces for <strong>interoperability</strong>, <strong>model agnostic</strong> tooling, and better <strong>context window optimization</strong>.</p>
+        <ul class="stagger big-list">
+          <li>Prompt engineering scales ideas, not integrations.</li>
+          <li>MCP standardizes capability discovery and tool invocation.</li>
+          <li>Protocol-driven architecture turns LLMs into reliable operators.</li>
+        </ul>
+      </section>
+
+      <section class="slide" data-title="MCP Architecture">
+        <h2>MCP Architecture: The How</h2>
+        <div class="architecture">
+          <div class="node">
+            <h3>Model</h3>
+            <p>Reasoning & tool selection</p>
+          </div>
+          <div class="node">
+            <h3>Claude Host</h3>
+            <p>Client runtime + safety boundaries</p>
+          </div>
+          <div class="node">
+            <h3>GitHub MCP Server</h3>
+            <p>Repo APIs, issues, PR workflows</p>
+          </div>
+        </div>
+        <svg class="data-path" viewBox="0 0 900 140" preserveAspectRatio="none" aria-hidden="true">
+          <path id="flowPath" d="M100 70 C 240 20, 320 120, 450 70 C 560 28, 650 112, 800 70" />
+          <circle class="packet" r="8">
+            <animateMotion dur="4s" repeatCount="indefinite">
+              <mpath href="#flowPath" />
+            </animateMotion>
+          </circle>
+        </svg>
+        <p class="keywords">Transport: <span>STDIO</span> | <span>SSE</span> • Protocol: <span>JSON-RPC</span></p>
+      </section>
+
+      <section class="slide" data-title="Live Workflow">
+        <h2>Live Workflow: Automated Bug Fixing</h2>
+        <div class="flowchart">
+          <div class="flow-step">1. Read GitHub Issue</div>
+          <div class="arrow">→</div>
+          <div class="flow-step">2. Edit code in VS Code</div>
+          <div class="arrow">→</div>
+          <div class="flow-step">3. Run terminal tests</div>
+          <div class="arrow">↺</div>
+          <div class="flow-step accent">Agentic verification loop</div>
+        </div>
+        <ul class="stagger">
+          <li>Action plans adapt to test output.</li>
+          <li>Tool use is deterministic; reasoning stays flexible.</li>
+          <li>Every artifact is traceable from issue to PR.</li>
+        </ul>
+      </section>
+
+      <section class="slide" data-title="Pathfinder-AI Highlight">
+        <h2>Personal Project: Pathfinder-AI</h2>
+        <div class="snapshot">
+          <div>
+            <h3>Project Snapshot</h3>
+            <p>MERN architecture focused on bridging AI reasoning with secure database execution layers.</p>
+            <ul class="stagger">
+              <li>Intent parsing + schema-aware query generation.</li>
+              <li>MCP-inspired tool contracts for MongoDB operations.</li>
+              <li>Feedback loop for accuracy, latency, and trust.</li>
+            </ul>
+          </div>
+          <aside class="stats">
+            <div><span>Stack</span><strong>MongoDB • Express • React • Node</strong></div>
+            <div><span>Focus</span><strong>Reasoning → Execution reliability</strong></div>
+            <div><span>Outcome</span><strong>Reduced human query translation overhead</strong></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="slide" data-title="Future of the Stack">
+        <h2>The Future of the Stack</h2>
+        <blockquote>
+          “We are moving from building apps for humans to building ecosystems for agents.”
+        </blockquote>
+        <p class="cta">The protocol is open. The future is autonomous.</p>
+        <ul class="stagger">
+          <li>Composable agent runtimes</li>
+          <li>Cross-vendor interoperability</li>
+          <li>Security-first autonomy at scale</li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="controls">
+      <button id="prevBtn" aria-label="Previous slide">← Prev</button>
+      <button id="nextBtn" aria-label="Next slide">Next →</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
